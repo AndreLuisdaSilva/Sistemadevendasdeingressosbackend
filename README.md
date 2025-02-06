@@ -24,9 +24,9 @@ git clone https://github.com/AndreLuisdaSilva/Sistemadevendasdeingressosbackend.
 cd Sistemadevendasdeingressosbackend
 
 2️⃣ Instalar Dependências
-
+```bash
 npm install
-
+```
 3️⃣ Configurar as Variáveis de Ambiente
 
 Crie um arquivo .env na raiz do projeto e configure as variáveis necessárias, como credenciais do banco de dados.
@@ -36,9 +36,9 @@ Crie um arquivo .env na raiz do projeto e configure as variáveis necessárias, 
 docker-compose up -d
 
 5️⃣ Executar a API
-
+```bash
 npm run dev
-
+```
 📌 Endpoints Principais
 
 Autenticação: /auth/login, /auth/register
@@ -52,8 +52,8 @@ Usuários: /users (Gestão de usuários e perfis)
 ✅ Testes
 
 Para rodar os testes unitários, utilize:
-
+```bash
 npm test
-
+```
 
 💡 Contribuição: Caso queira contribuir, sinta-se à vontade para abrir uma issue ou um pull request! 🚀
