@@ -55,8 +55,5 @@ Para rodar os testes unitários, utilize:
 
 npm test
 
-📜 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
 💡 Contribuição: Caso queira contribuir, sinta-se à vontade para abrir uma issue ou um pull request! 🚀
