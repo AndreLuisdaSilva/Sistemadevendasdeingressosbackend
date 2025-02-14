@@ -22,16 +22,16 @@ jobs:
         run: |
           npm install
 
-      - name: Build Docker images
-        # You may pin to the exact commit or the version.
-        # uses: docker/build-push-action@ca877d9245402d1537745e0e356eab47c3520991
-        uses: docker/build-push-action@v6.13.0
-        with:
-          context: ./
-          file: ./Dockerfile
-          push: true
-          tags: |
-            bootcampjava-node:latest
+      - name: Set up Docker
+        run: |
+          sudo apt-get install docker-compose
+
+      - name: Build Docker images with Docker Compose
+        run: |
+          docker-compose -f docker-compose.yml build
+          docker-compose -f docker-compose.yml up -d
+        env:
+          DOCKER_BUILDKIT: 1
 
   deploy:
     name: Deploy Application
