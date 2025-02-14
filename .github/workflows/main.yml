@@ -27,8 +27,8 @@ jobs:
         # uses: docker/build-push-action@ca877d9245402d1537745e0e356eab47c3520991
         uses: docker/build-push-action@v6.13.0
         with:
-          context: Sistemadevendasdeingressosbackend
-          file: Sistemadevendasdeingressosbackend/Dockerfile
+          context: ./
+          file: ./Dockerfile
           push: true
           tags: |
             bootcampjava-node:latest
