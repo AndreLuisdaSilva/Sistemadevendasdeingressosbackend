@@ -29,7 +29,8 @@ index.html
 tailwind.config.js
 vite.config.js
 src/assets/
-src/app.css
-src/app.jsx
 src/index.css
 src/main.jsx
+src/App.jsx
+src/App.css
+backend/
