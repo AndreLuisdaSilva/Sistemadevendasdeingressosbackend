@@ -28,8 +28,9 @@ jobs:
 
       - name: Build Docker images with Docker Compose
         run: |
-          docker compose -f docker-compose.yml build
-          docker compose -f docker-compose.yml up -d
+          cd Sistemadevendasdeingressosbackend
+          docker-compose -f docker-compose.yml build
+          docker-compose -f docker-compose.yml up -d
         env:
           DOCKER_BUILDKIT: 1
 
