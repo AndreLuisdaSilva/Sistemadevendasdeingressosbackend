@@ -8,7 +8,7 @@ function App() {
     const [error, setError] = useState(null);
     const [showErrorMessage, setShowErrorMessage] = useState(false);
 
-    const API_URL = "https://8080-idx-bootcampjava-1726664085711.cluster-ve345ymguzcd6qqzuko2qbxtfe.cloudworkstations.dev";
+    const API_URL = "";
 
     const fetchTodos = async () => {
         setIsLoading(true);
