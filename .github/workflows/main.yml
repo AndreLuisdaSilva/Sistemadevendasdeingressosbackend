@@ -20,6 +20,7 @@ jobs:
              
       - name: Install dependencies
         run: |
+          npm install @vitejs/plugin-react@latest
           npm install
           npm update @vitejs/plugin-react
 
