@@ -1,0 +1,46 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  CI:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4.2.0
+        with:
+          node-version: 21.7.2
+             
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Docker images
+        # You may pin to the exact commit or the version.
+        # uses: docker/build-push-action@ca877d9245402d1537745e0e356eab47c3520991
+        uses: docker/build-push-action@v6.13.0
+        with:
+          context: Sistemadevendasdeingressosbackend
+          file: Sistemadevendasdeingressosbackend/Dockerfile
+          push: true
+          tags: |
+            bootcampjava-node:latest
+
+  deploy:
+    name: Deploy Application
+    needs: CI
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to Server
+        run: echo "Deploying application..."
