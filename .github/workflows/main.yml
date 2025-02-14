@@ -20,9 +20,7 @@ jobs:
              
       - name: Install dependencies
         run: |
-          npm install @vitejs/plugin-react@latest
           npm install
-          npm update @vitejs/plugin-react
 
       - name: Build Docker images
         # You may pin to the exact commit or the version.
