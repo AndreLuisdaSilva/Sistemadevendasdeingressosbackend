@@ -21,7 +21,11 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
-
+          
+      - name: List repository files (Debugging step)
+        run: |
+          ls -al
+          
       - name: Set up Docker
         run: |
           sudo apt-get install docker-compose
