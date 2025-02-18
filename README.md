@@ -1,3 +1,4 @@
+![GitHub Actions](https://github.com/AndreLuisdaSilva/Sistemadevendasdeingressosbackend/actions/workflows/main.yml/badge.svg)
 🎟 Sistema de Vendas de Ingressos - Backend
 
 Este repositório contém o backend do Sistema de Vendas de Ingressos, uma API desenvolvida para gerenciar eventos, ingressos e compras.
