@@ -8,7 +8,7 @@ Node.js - Ambiente de execução JavaScript
 
 Express.js - Framework para criação da API REST
 
-PostgreSQL - Banco de dados relacional
+MySQL - Banco de dados relacional
 
 Sequelize - ORM para interação com o banco de dados
 
